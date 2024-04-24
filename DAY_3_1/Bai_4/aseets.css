@@ -1,0 +1,28 @@
+.contact{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    min-height: 200px;
+    background-color: aliceblue;
+}
+h2{
+    margin-top: 0;
+}
+.s-contact{
+    padding: 20px;
+}
+input {
+    padding: 4px;
+    margin-right:60px;
+    margin-bottom: 24px;
+}
+textarea {
+    width: 80%;
+    margin-bottom: 24px;
+}
+button {
+    color: #fff;
+    background-color: #5c4f4f;
+    height: 28px;
+
+}

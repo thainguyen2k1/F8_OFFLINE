@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets.css" />
+    <title>Form login</title>
+  </head>
+  <body>
+    <div class="s-form">
+      <form action="1">
+        <div>
+          <label for="name">
+            <div class="left">Usename :</div>
+            <input type="text" id="name" style="width: 60%" />
+            <div class="clear"></div>
+          </label>
+        </div>
+        <div>
+          <label for="password">
+            <div class="left">Password :</div>
+            <input type="text" id="password" style="width: 60%" />
+            <div class="clear"></div>
+          </label>
+        </div>
+        <div>
+          <label for="city">
+            <div class="left">City of Employment :</div>
+            <input type="text" id="city" style="width: 60%" />
+            <div class="clear"></div>
+          </label>
+        </div>
+        <div>
+          <label for="web">
+            <div class="left">Web server :</div>
+            <select name="1" id="web">
+              <option value="1" selected>---Choose a Server---</option>
+              <option value="2">Mat troi</option>
+              <option value="3">Mat Trang</option>
+            </select>
+            <div class="clear"></div>
+          </label>
+        </div>
+        <div>
+          <div class="left height-left" style="margin-top: 24px">
+            PLease specify your role :
+          </div>
+          <div>
+            <div>
+              <label for="admin"
+                ><input type="radio" id="amin" name="1" />Admin</label
+              >
+            </div>
+            <div>
+              <label for="engineer"
+                ><input type="radio" id="engineer" name="1" />Engineer</label
+              >
+            </div>
+            <div>
+              <label for="manager"
+                ><input type="radio" id="manager" name="1" />Manager</label
+              >
+            </div>
+            <div>
+              <label for="guest"
+                ><input type="radio" id="guest" name="1" />Guest</label
+              >
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div>
+          <div class="left height-left">Single Sign-on to the following :</div>
+          <div>
+            <label for="mail"><input type="checkbox" id="mail" />Mail </label>
+          </div>
+          <div>
+            <label for="payroll"
+              ><input type="checkbox" id="payroll" />Payroll
+            </label>
+          </div>
+          <div>
+            <label for="self"
+              ><input type="checkbox" id="self" />Self-service
+            </label>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit">Login</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
