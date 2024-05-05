@@ -1,0 +1,31 @@
+.checkbox1 {
+  margin-bottom: 16px;
+}
+.checkbox1 input:checked ~ p {
+  display: block;
+}
+.checkbox1 p {
+  display: none;
+}
+.checkbox1 label {
+  display: inline-block;
+  color: #fff;
+  padding: 8px;
+  width: 100%;
+  background-color: #d85824;
+}
+/* .checkbox1 label::before {
+  content: "+";
+} */
+label > span {
+  display: none;
+}
+.checkbox1 input:checked ~ label > i {
+  display: none;
+}
+.checkbox1 input:checked ~ label > span {
+  display: block;
+}
+.ti-angle-double-down {
+  padding: 1px;
+}

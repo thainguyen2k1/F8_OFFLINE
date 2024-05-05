@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(23, 37, 37);
+}
+.s-footer {
+  padding: 16px;
+}
+h2 {
+  color: white;
+}
+h2 span {
+  color: goldenrod;
+}
+footer:hover input::placeholder {
+  color: goldenrod;
+  background-color: #ddd;
+}
+button {
+  background-color: yellow;
+  padding: 4px;
+}
+footer:hover button {
+  background-color: goldenrod;
+  color: #fff;
+}

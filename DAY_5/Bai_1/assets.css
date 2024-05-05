@@ -1,0 +1,20 @@
+.display {
+  background-image: url("https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg");
+  padding-top: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.blurred {
+  position: absolute;
+  width: 425px;
+  height: 238px;
+  background-color: #ddd;
+  top: 165px;
+  left: 519px;
+  opacity: 0.5;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}

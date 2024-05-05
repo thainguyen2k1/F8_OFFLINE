@@ -1,0 +1,39 @@
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  min-height: 500px;
+}
+.s-layout {
+  padding: 24px 12px;
+  text-align: center;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.photo {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.photo p {
+  opacity: 0.6;
+}
+
+.s-photo {
+  padding: 12px 24px;
+}
+.ti-camera,
+.ti-video-camera,
+.ti-desktop {
+  font-size: 46px;
+  border: 2px solid #f2a83a;
+  border-radius: 50%;
+  width: 96px;
+  height: 72px;
+  padding-top: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f2a83a;
+}

@@ -1,0 +1,16 @@
+.best-seller {
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav div {
+  padding: 12px;
+  margin: 0 1px 0 1px;
+  background-color: #ddd;
+}
+.nav div:hover {
+  background-color: blue;
+  color: #fff;
+}
