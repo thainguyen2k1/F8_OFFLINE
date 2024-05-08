@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  min-height: 800px;
+  background-color: #ebf5fe;
+}
+a {
+  color: #3069eb;
+  font-weight: 800;
+}
+.box-container {
+  background-color: #fff;
+  margin-right: 16px;
+  border-radius: 10px;
+}
+.box-header h2 {
+  margin: 0 0 4px 0;
+}
+.ti-rocket,
+.ti-basketball,
+.ti-cloud-down,
+.ti-vector,
+.ti-envelope,
+.ti-game {
+  padding: 16px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.ti-rocket {
+  background-color: #e45a7b;
+}
+.ti-basketball {
+  background-color: #52a9a3;
+}
+.ti-cloud-down {
+  background-color: #e69438;
+}
+.ti-vector {
+  background-color: #3d72d5;
+}
+.ti-envelope {
+  background-color: #7627cd;
+}
+.ti-game {
+  background-color: #7da740;
+}
+.b4:hover {
+  border: #e45a7b 2px solid;
+}
+.b5:hover {
+  border: #52a9a3 2px solid;
+}
+.b6:hover {
+  border: #e69438 2px solid;
+}
+.b1:hover {
+  border: #3d72d5 2px solid;
+}
+.b2:hover {
+  border: #7627cd 2px solid;
+}
+.b3:hover {
+  border: #7da740 2px solid;
+}

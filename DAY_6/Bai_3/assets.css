@@ -1,0 +1,29 @@
+* {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.header {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  display: inline;
+  margin-left: 8px;
+}
+button {
+  padding: 8px 16px;
+  background-color: #475aee;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.ti-angle-down {
+  font-size: 8px;
+  font-weight: 800;
+}
