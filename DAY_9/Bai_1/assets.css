@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 50px;
+  /* padding-inline: 100px; */
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-inline: 50px;
+}
+header li {
+  display: inline-block;
+}
+header li a {
+  display: block;
+  padding: 5px 10px;
+  /* background-color: aqua; */
+  text-decoration: none;
+  color: #000;
+}
+header .search input {
+  padding-block: 12px;
+  padding-inline: 36px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 4px;
+}
+header .search {
+  position: relative;
+}
+.ti-search {
+  position: absolute;
+  color: #6e6e6e;
+  top: 12px;
+  left: 12px;
+}
+.line {
+  background-color: #ccc;
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 190px;
+}
+.ti-bag {
+  position: absolute;
+  top: 12px;
+  left: 205px;
+}
+.number {
+  position: absolute;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #f54b4b;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  right: -8px;
+  top: -13px;
+}
+header li:hover a {
+  color: #f54b4b;
+}
+header input:focus {
+  outline: none;
+}
+/* ket thuc header */
+/* main */
+.container-grocery {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  padding-inline: 50px;
+}
+/* grocery */
+main .content-grocery {
+  padding-right: 20px;
+  width: 50%;
+}
+main .img-content {
+  margin-inline: auto;
+  text-align: center;
+}
+main .img-content img {
+  width: 60%;
+}
+main .title-content {
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #fdecec;
+  color: #f54b4b;
+  display: inline-block;
+  padding: 12px 40px 12px 12px;
+  border-radius: 20px;
+}
+.title-content img {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+.content-grocery h1 {
+  font-size: 90px;
+  font-weight: 700px;
+}
+.content-grocery h1 span {
+  color: #f54b4b;
+}
+.content-grocery p {
+  font-size: 20px;
+}
+.footer-content {
+  display: flex;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid #fdc55e;
+  border-bottom: 8px solid transparent;
+}
+.footer-content > div {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-right: 40px;
+}
+button {
+  display: inline-block;
+  height: 50px;
+  padding-inline: 32px;
+  font-size: 1.17em;
+  border: none;
+  background-color: #f54b4b;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #f54b4b;
+}
+button:hover {
+  color: #f54b4b;
+  background-color: #fff;
+  /* border: 1px solid #f54b4b; */
+}
+.footer-content a {
+  text-decoration: none;
+  color: #201f1f;
+  font-size: 1.17em;
+}
+/* ket thuc grocery */
+/* delivery */
+.container-delivery {
+  width: 100%;
+  background-color: #fef5f5;
+  padding-inline: 10%;
+  padding-block: 60px;
+}
+.method-delivery {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 60px;
+  padding-inline: 200px;
+}
+.method-delivery .box {
+  background-color: #fff;
+  text-align: center;
+  width: 25%;
+  padding: 40px;
+  border-radius: 10px;
+}
+/* ket thuc delivery */
+/* fovorite */
+.container-favorite {
+  align-items: center;
+  padding: 50px;
+  display: flex;
+}
+/* End fovorite */
+/* dowload */
+.container-dow {
+  align-items: center;
+  padding: 50px;
+  display: flex;
+  background-color: #fef5f5;
+}
+.link-dow {
+  display: flex;
+  align-items: center;
+}
+.apple,
+.androi {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+.ti-apple,
+.ti-android {
+  padding: 8px;
+  font-size: 30px;
+}
+/* end dowload */
+/* Ket thuc Main */
+/* Footer */
+footer {
+  margin-inline: 50px;
+}
+.content-footer {
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.box1,
+.box2,
+.box3 {
+  width: 25%;
+  padding-right: 200px;
+}
+h3 {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+footer a {
+  display: block;
+  padding-block: 10px;
+  text-decoration: none;
+  color: #000;
+}
+footer p {
+  margin-top: 10px;
+}
+.fi-footer {
+  justify-content: space-between;
+  display: flex;
+  padding-block: 20px;
+}
+.fi-footer a {
+  color: #585858;
+}
+.fi-footer a:hover {
+  color: #000;
+}
+/* End Footer */
