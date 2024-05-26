@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  position: relative;
+}
+.nav {
+  display: flex;
+}
+.nav span {
+  margin: 4px;
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: bisque;
+  color: #000;
+  text-decoration: none;
+  user-select: none;
+}
+.nav div {
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.content1,
+.content2,
+.content3,
+.content4 {
+  margin: 24px;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  top: 38px;
+  left: -24px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+h1,
+p {
+  margin: 20px;
+}
+input[id="1"]:checked ~ .content1 {
+  opacity: 1;
+  transform: rotate(0);
+}
+input[id="2"]:checked ~ .content2 {
+  opacity: 1;
+  transform: rotate(0);
+}
+input[id="3"]:checked ~ .content3 {
+  opacity: 1;
+  transform: rotate(0);
+}
+input[id="4"]:checked ~ .content4 {
+  opacity: 1;
+  transform: rotate(0);
+}
+input[id="1"]:checked ~ .nav label[for="1"] span {
+  background-color: #3598dc;
+  color: #fff;
+}
+input[id="2"]:checked ~ .nav label[for="2"] span {
+  background-color: #3598dc;
+  color: #fff;
+}
+
+input[id="3"]:checked ~ .nav label[for="3"] span {
+  background-color: #3598dc;
+  color: #fff;
+}
+
+input[id="4"]:checked ~ .nav label[for="4"] span {
+  background-color: #3598dc;
+  color: #fff;
+}

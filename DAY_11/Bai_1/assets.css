@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sub-nav {
+  z-index: 2;
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  color: #05a8f5;
+  display: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #05a8f5;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  display: block;
+  width: 200px;
+  padding: 12px 24px;
+  user-select: none;
+}
+.ti-arrow-left {
+  color: #05a8f5;
+  font-size: 25px;
+  font-weight: 700;
+  position: absolute;
+  visibility: hidden;
+  transform: rotate(-90deg);
+  transition: 0.1s linear;
+}
+.container {
+  width: 800px;
+  height: 800px;
+  margin: 30px auto;
+  background-color: #05a8f5;
+  position: relative;
+  overflow: hidden;
+}
+.cover {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: -77px;
+  left: -86px;
+  transition: 0.1s linear;
+}
+.nav {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 4px;
+}
+.box {
+  width: 28px;
+  height: 4px;
+  background-color: #05a8f5;
+  margin-bottom: 4px;
+  transition: 0.1s linear;
+}
+.content {
+  color: #fff;
+  position: absolute;
+  top: 260px;
+  right: 80px;
+}
+h1::before {
+  content: "#1";
+  display: inline-block;
+  color: #fff;
+  margin-right: 4px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+input:checked ~ .cover {
+  top: -200px;
+  left: -200px;
+  width: 1300px;
+  height: 1300px;
+}
+input:checked ~ label .ti-arrow-left {
+  transform: rotate(0);
+  visibility: initial;
+}
+input:checked ~ label .box {
+  width: 0;
+  height: 0;
+}
+input:checked ~ label .sub-nav {
+  display: block;
+}
+input[type="radio"]:checked ~ a {
+  background-color: #ddd;
+  color: #000;
+}
