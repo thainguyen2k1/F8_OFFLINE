@@ -12,7 +12,7 @@ body {
   height: 300px;
   margin: 30px auto;
   overflow: hidden;
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .box {
   width: 400px;
@@ -20,7 +20,7 @@ body {
   background-color: red;
   position: relative;
   top: 0px;
-  transition: 1s linear;
+  transition: 0.5s linear;
   padding: 100px;
   /* overflow: hidden; */
 }
@@ -43,7 +43,7 @@ body {
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
   border-bottom: 100px solid rgb(194, 18, 18);
-  transition: 0.5s linear;
+  transition: 0.2s linear;
   transition-delay: 0.2s;
 }
 .box-left {
@@ -76,7 +76,7 @@ body {
   background-color: #fff;
   left: calc(50% - 150px);
   top: 150px;
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .header-letter {
   display: inline-block;
