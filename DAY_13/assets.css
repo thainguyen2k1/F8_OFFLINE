@@ -115,6 +115,9 @@
 p span {
   opacity: 0.6;
 }
+input:focus {
+  border-color: #615dfa;
+}
 input:focus ~ p {
   font-size: 12px;
   top: -11px;
