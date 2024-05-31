@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 800px;
+  background: url("https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg")
+    no-repeat 0;
+  background-size: cover;
+  padding-inline: 100px;
+}
+.landing-head {
+  width: 40%;
+}
+.text-head {
+  margin-bottom: 30px;
+}
+.text-head .top {
+  font-size: 24px;
+}
+.text-head .mid {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.text-head .bottom {
+  font-size: 18px;
+  margin-inline: auto;
+}
+.btn-acount {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  border: 1px solid #fff;
+  background-color: transparent;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+}
+.btn-login {
+  color: #fff;
+  width: 50%;
+  border-right: 1px solid #fff;
+  border-radius: 10px 0 0 10px;
+  transition: 0.2s linear;
+}
+.btn-login span,
+.btn-register span {
+  display: block;
+}
+.btn-register {
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  width: 50%;
+  border-left: 1px solid #fff;
+  transition: 0.2s linear;
+}
+.text-head {
+  color: #fff;
+  text-align: center;
+}
+/*  */
+/*  */
+/* form login */
+.account {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.form-login,
+.form-register {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 50%;
+  left: 0;
+  width: 40%;
+  translate: 100px -50%;
+  visibility: hidden;
+  width: 380px;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s linear;
+}
+.head-form {
+  font-size: 30px;
+  margin-block: 50px;
+}
+.inputs {
+  outline: none;
+  padding: 12px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.form-login p,
+.form-register div p {
+  position: absolute;
+  pointer-events: none;
+  padding: 6px;
+  background-color: #fff;
+  top: 6px;
+  left: 50px;
+  transition: 0.2s linear;
+}
+p span {
+  opacity: 0.6;
+}
+input:focus ~ p {
+  font-size: 12px;
+  top: -11px;
+  left: 50px;
+}
+
+.rmb-forgot {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+.rmb-forgot a {
+  text-decoration: none;
+  color: #5c5c5c;
+}
+button {
+  width: 300px;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #615dfa;
+  color: #fff;
+}
+.footer-login {
+  margin-block: 30px 50px;
+}
+.footer-login a i {
+  font-size: 24px;
+  margin: 5px;
+}
+.footer-login a {
+  background-color: aqua;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Form register */
+.auto-update-register {
+  /* display: flex; */
+  text-align: start;
+  width: 300px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+.form-register .text-register {
+  width: 300px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+/* input:checked */
+input[id="login"]:checked ~ .landing-head .btn-acount .btn-login {
+  background-color: #fff;
+  color: #000;
+}
+input[id="login"]:checked ~ .account .form-login {
+  visibility: initial;
+  translate: 0 -50%;
+  opacity: 1;
+}
+/*  */
+input[id="register"]:checked ~ .landing-head .btn-acount .btn-register {
+  background-color: #fff;
+  color: #000;
+}
+input[id="register"]:checked ~ .account .form-register {
+  visibility: initial;
+  translate: 0 -50%;
+  opacity: 1;
+}
+input:not(:placeholder-shown) ~ p {
+  font-size: 12px;
+  top: -11px;
+  left: 50px;
+}
+
+@media screen and (max-width: 1365px) {
+  .landing-head,
+  .account {
+    width: 100%;
+  }
+  .form-login,
+  .form-register {
+    display: none;
+    /* position: relative; */
+    top: 0;
+    left: 50%;
+  }
+  .landing-head {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  input[id="login"]:checked ~ .account .form-login {
+    visibility: initial;
+    display: block;
+    translate: -50% 0;
+  }
+  input[id="register"]:checked ~ .account .form-register {
+    visibility: initial;
+    display: block;
+    translate: -50% 0;
+  }
+  input[id="register"]:checked ~ .account {
+    height: 600px;
+  }
+  input[id="login"]:checked ~ .account {
+    height: 500px;
+  }
+  .text-head .bottom {
+    display: none;
+  }
+}

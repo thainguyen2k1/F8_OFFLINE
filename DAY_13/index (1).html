@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets.css" />
+        <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="radio" id="login" name="login-register" checked hidden>
+      <input type="radio" id="register" name="login-register" hidden>
+      <div class="landing-head">
+        <div class="text-head">
+          <div class="top">WELCOME TO</div>
+          <div class="mid">VIKINGER</div>
+          <div class="bottom">
+            The next generation social network & community! Connect with your
+            friends and play with our quests and badges gamification system!
+          </div>
+        </div>
+        <!-- End .text-head -->
+        <div class="btn-acount">
+              <div class="btn-login">
+                <label for="login"><span style="line-height: 50px">Login</span></label>
+              </div>
+          <div class="btn-register">
+            <label for="register"><span style="line-height: 50px">Register</span></label>
+          </div>
+        </div>
+      </div>
+      <!-- End .landing-head -->
+      <div class="account">
+        <form action="1" class="form-login">
+          <div class="head-form">Account Login</div>
+          <div style="position: relative;">
+            <input class="inputs" type="text" placeholder="" autofocus/>
+            <p><span>Username or Email</span></p>
+            
+          </div>
+          <div style="position: relative;">
+            <input class="inputs" type="password" placeholder=""/>
+            <p><span>Password</span></p>
+          </div>
+          <div class="rmb-forgot">
+              <div>
+                <input type="checkbox" id="10" /><label for="10"> Remember Me</label>
+              </div>
+              <div>
+                <a href="#">Forgot password?</a>
+              </div>
+          </div class="rmb-forgot">
+          <div><button>Login to your Account!</button></div>
+          <div style="position: relative;margin-bottom: 20px;">
+              <hr style="width: 300px;margin-inline: auto;">
+              <span style="position: absolute;width: 200px;font-size: 14px;background-color: #fff;text-align: center; top: -8px;
+              left: 90px;">Login with your Social Account</span></div>
+          <div class="link-acount"></div>
+          <div class="footer-login">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-solid fa-table-tennis-paddle-ball"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </form>
+        <!-- End .form-login -->
+        <form action="2" class="form-register">
+          <div class="head-form">Create your Account!</div>
+          <div style="position: relative;">
+            <input class="inputs" type="text" placeholder="" autofocus/>
+            <p><span>Email</span></p>
+          </div>
+          <div style="position: relative;">
+            <input class="inputs" type="text" placeholder="" />
+            <p><span>Username</span></p>
+          </div>
+          <div style="position: relative;">
+            <input class="inputs" type="password" placeholder="" />
+            <p><span>Password</span></p>
+          </div>
+          <div style="position: relative;">
+            <input class="inputs" type="password" placeholder="" />
+            <p><span>Repeat Password</span></p>
+          </div>
+          <div class="auto-update-register"><input type="checkbox" id="regis"> <label for="regis"> Send me news and updates via email</label></div>
+          <div><button>Register now!  </button></div>
+          <p class="text-register">You'll receive a confirmation email in your inbox with a link to activate your account. If you have any problems, <a href="#">contact us</a>!</p>
+        </form>
+        <!-- End .form-register -->
+      </div>
+    </div>
+  </body>
+</html>
