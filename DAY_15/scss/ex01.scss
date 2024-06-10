@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 20px;
+}
+.sidebar{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    h2{
+        font-weight: 600;
+        &::before{
+            content:"C";
+            display: inline-block;
+            text-align: end;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: yellow;
+            font-weight: 600;
+        }
+        span {
+            border-top: 2px solid black;
+            line-height: 4px;
+        }
+        margin-block: 20px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-block: 20px;
+    }
+    >div{
+        display: flex;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+        .menu{
+            list-style: none;
+            li{
+                margin-block: 15px;
+                text-align: start;
+                margin-left: 10%;
+            }
+            img{
+                width: 20px;
+                display: inline-block;
+            }
+        }
+    }
+    .comment{
+        text-align: start;
+        margin-left: 10%;
+        i{
+            text-align: center;
+            background-color: #ccc;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+        }
+    }
+}
+.content{
+    .head-content{
+        margin-bottom: 30px;
+        input{
+            background-color: #ccc;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        >div{
+            .nav{
+                li{
+                    display: inline-block;
+                    a{
+                        display: block;
+                        &:hover {
+                            border-bottom: 2px solid #000;
+                        }
+                    }
+                    margin-inline: 4px;
+                }
+                display: inline-block;
+            }
+            .users{
+                display: inline-block;
+                i{
+                    margin-right: 10px;
+                }
+    
+            }
+        }
+    }
+    .img-content{
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}

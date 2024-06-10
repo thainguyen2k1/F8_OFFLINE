@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+}
+.sidebar h2 {
+  font-weight: 600;
+  margin-block: 20px;
+}
+.sidebar h2::before {
+  content: "C";
+  display: inline-block;
+  text-align: end;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: yellow;
+  font-weight: 600;
+}
+.sidebar h2 span {
+  border-top: 2px solid black;
+  line-height: 4px;
+}
+.sidebar h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-block: 20px;
+}
+.sidebar > div {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar > div .menu {
+  list-style: none;
+}
+.sidebar > div .menu li {
+  margin-block: 15px;
+  text-align: start;
+  margin-left: 10%;
+}
+.sidebar > div .menu img {
+  width: 20px;
+  display: inline-block;
+}
+.sidebar .comment {
+  text-align: start;
+  margin-left: 10%;
+}
+.sidebar .comment i {
+  text-align: center;
+  background-color: #ccc;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+.content .head-content {
+  margin-bottom: 30px;
+}
+.content .head-content input {
+  background-color: #ccc;
+  padding: 4px;
+  border-radius: 4px;
+}
+.content .head-content > div .nav {
+  display: inline-block;
+}
+.content .head-content > div .nav li {
+  display: inline-block;
+  margin-inline: 4px;
+}
+.content .head-content > div .nav li a {
+  display: block;
+}
+.content .head-content > div .nav li a:hover {
+  border-bottom: 2px solid #000;
+}
+.content .head-content > div .users {
+  display: inline-block;
+}
+.content .head-content > div .users i {
+  margin-right: 10px;
+}
+.content .img-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=ex01.css.map */
