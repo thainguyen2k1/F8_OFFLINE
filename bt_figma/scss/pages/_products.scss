@@ -17,8 +17,8 @@
             position: absolute;
             left: 50%;
             translate: -50% 0;
-            height: 235px;
-            width: 235px;
+            padding-top: 100%;
+            width: 100%;
             border-radius: 100%;
             background-color: #FFBA94;
         }
@@ -26,8 +26,8 @@
             position: absolute;
             left: 50%;
             translate: -50% 0;
-            height: 235px;
-            width: 235px;
+            padding-top: 100%;
+            width: 100%;
             background-color: #C5FFA8;
             border-radius: 100%;
         }
@@ -74,5 +74,12 @@
 
 
 @include screenTablet{
-
+    #products .product {
+        .around-even,.around-odd{
+            width: 235px;
+            height: 235px;
+            padding-top: 0;
+        }
+    }
+    
 }

@@ -216,7 +216,8 @@ header .purchase i {
 }
 #about .content-about .medal {
   display: flex;
-  height: 600px;
+  flex-direction: column;
+  height: 1200px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -228,7 +229,7 @@ header .purchase i {
   margin-right: 16px;
   border-radius: 5px;
   padding: 20px;
-  width: 20%;
+  width: 50%;
 }
 #about .content-about .medal .medal1 img {
   margin-bottom: 20px;
@@ -246,6 +247,14 @@ header .purchase i {
   padding-block: 70px;
 }
 
+@media (min-width: 768px) {
+  #about .content-about .medal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 600px;
+  }
+}
 #products {
   margin-top: 40px;
   padding-inline: 80px;
@@ -265,8 +274,8 @@ header .purchase i {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  height: 235px;
-  width: 235px;
+  padding-top: 100%;
+  width: 100%;
   border-radius: 100%;
   background-color: #FFBA94;
 }
@@ -274,8 +283,8 @@ header .purchase i {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  height: 235px;
-  width: 235px;
+  padding-top: 100%;
+  width: 100%;
   background-color: #C5FFA8;
   border-radius: 100%;
 }
@@ -317,6 +326,13 @@ header .purchase i {
   border-radius: 5px;
 }
 
+@media (min-width: 768px) {
+  #products .product .around-even, #products .product .around-odd {
+    width: 235px;
+    height: 235px;
+    padding-top: 0;
+  }
+}
 * {
   font-family: Inter;
 }
