@@ -1,0 +1,100 @@
+@import "../partials/mixins";
+header {
+    padding-inline: 40px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    width: 100%;
+    left: 50%;
+    translate: -50% 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    img{
+        height: 40px;
+    }
+    .fa-solid.fa-cart-shopping{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "3";
+            font-size: 12px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: red;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            top: -13px;
+            right: -9px;
+
+        }
+    }
+    input:checked + nav {
+        height: 180px;
+    }
+    nav{
+        transition: 0.2s linear;
+        height: 0;
+        overflow: hidden;
+        width: 110%;
+        background-color: #ccc;
+        position: absolute;
+        top: 40px;
+        left: -20px;
+        input:checked + li a { 
+            border-bottom: 1px solid green;
+            color: green;
+        }
+
+        li{
+            margin-left: 40px;
+            margin-block: 10px;
+            &:hover{
+                a{
+                    color: green;
+                }
+            }
+        }
+    }
+    .purchase{
+        i{
+            margin-inline: 10px;
+        }
+    }
+}
+
+@include screenMobile{
+}
+@include screenTablet{
+    header {
+        padding-inline: 80px;
+        img{
+            height: 72px;
+        }
+        input:checked + nav {
+            height: auto;
+        }
+        nav{
+            position: static;
+            display: flex;
+            width: auto;
+            height: auto;
+            background-color: #fff;
+
+            li{
+                display: inline-block;
+                margin-block: 0;
+                a{
+                    display: block;
+                    line-height: 72px;
+                    // padding-block: 40px;
+                }
+            }
+        }
+        .button-bar{
+            display: none;
+        }
+        
+    }
+}

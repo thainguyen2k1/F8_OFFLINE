@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: Roboto;
+  line-height: 1.5;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  padding-inline: 40px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9999;
+  background-color: #fff;
+  width: 100%;
+  left: 50%;
+  translate: -50% 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header img {
+  height: 40px;
+}
+header .fa-solid.fa-cart-shopping {
+  position: relative;
+}
+header .fa-solid.fa-cart-shopping::after {
+  position: absolute;
+  content: "3";
+  font-size: 12px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: -13px;
+  right: -9px;
+}
+header input:checked + nav {
+  height: 180px;
+}
+header nav {
+  transition: 0.2s linear;
+  height: 0;
+  overflow: hidden;
+  width: 110%;
+  background-color: #ccc;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+}
+header nav input:checked + li a {
+  border-bottom: 1px solid green;
+  color: green;
+}
+header nav li {
+  margin-left: 40px;
+  margin-block: 10px;
+}
+header nav li:hover a {
+  color: green;
+}
+header .purchase i {
+  margin-inline: 10px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-inline: 80px;
+  }
+  header img {
+    height: 72px;
+  }
+  header input:checked + nav {
+    height: auto;
+  }
+  header nav {
+    position: static;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+  }
+  header nav li {
+    display: inline-block;
+    margin-block: 0;
+  }
+  header nav li a {
+    display: block;
+    line-height: 72px;
+  }
+  header .button-bar {
+    display: none;
+  }
+}
+#home {
+  padding-inline: 20px;
+  padding-top: 60px;
+  text-align: center;
+  align-items: center;
+}
+#home .text-home {
+  padding-inline: 20%;
+}
+#home .text-home h2 {
+  margin-block: 20px;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+#home .text-home h3 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 800;
+}
+#home .text-home p {
+  margin-bottom: 20px;
+}
+#home .img-home {
+  display: flex;
+  justify-content: center;
+  background-color: #DCFFCA;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#home .img-home img {
+  display: inline-block;
+  height: 200px;
+}
+#home .img-home .col-text {
+  font-size: 6vw;
+  transform: rotate(90deg);
+  color: #216000;
+  font-weight: 800;
+  opacity: 0.15;
+}
+
+@media (min-width: 768px) {
+  #home {
+    padding-top: 100px;
+  }
+  #home .text-home {
+    text-align: start;
+    padding-left: 60px;
+  }
+  #home .img-home {
+    position: relative;
+  }
+  #home .img-home img {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    left: -35%;
+  }
+  #home .img-home .col-text {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    translate: 0 -50%;
+  }
+}
+#about {
+  padding-inline: 80px;
+  margin-top: 40px;
+}
+#about .text-about {
+  text-align: center;
+}
+#about .text-about h2 {
+  margin-inline: auto;
+  font-size: 2em;
+  font-weight: 800;
+  width: 40% px;
+}
+#about .text-about p {
+  margin-top: 20px;
+  margin-inline: auto;
+  width: 50%;
+}
+#about .content-about {
+  position: relative;
+}
+#about .content-about .around1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background-color: #DCFFCA;
+}
+#about .content-about .around2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background-color: #FFD5BD;
+}
+#about .content-about .medal {
+  display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#about .content-about .medal .medal1 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 300px;
+  background-color: #fff;
+  margin-right: 16px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 20%;
+}
+#about .content-about .medal .medal1 img {
+  margin-bottom: 20px;
+}
+#about .content-about .medal .medal1 span {
+  font-weight: 800;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+#about .content-about .medal .medal1 div {
+  font-weight: 600;
+}
+#about .content-about .medal .maedal2 {
+  height: 400px;
+  padding-block: 70px;
+}
+
+#products {
+  margin-top: 40px;
+  padding-inline: 80px;
+}
+#products .heading-products {
+  font-weight: 800;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#products .product {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#products .product .around-odd {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  height: 235px;
+  width: 235px;
+  border-radius: 100%;
+  background-color: #FFBA94;
+}
+#products .product .around-even {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  height: 235px;
+  width: 235px;
+  background-color: #C5FFA8;
+  border-radius: 100%;
+}
+#products .product img {
+  position: relative;
+  top: 60px;
+  margin-inline: auto;
+}
+#products .product .content-product {
+  margin-top: 60px;
+}
+#products .product .content-product h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+#products .product .content-product .br {
+  width: 60px;
+  height: 2px;
+  background-color: #ccc;
+  margin-inline: auto;
+  margin-block: 10px;
+}
+#products .product .content-product h3 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#products .product .content-product p {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#products .product .content-product p span {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+#products .product .content-product button {
+  background-color: #46B20F;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+* {
+  font-family: Inter;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+@import "../partials/mixins";
+#products{
+    margin-top: 40px;
+    padding-inline: 80px;
+
+    .heading-products{
+        font-weight: 800;
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .product{
+        position: relative;
+        text-align: center;
+        margin-bottom: 40px;
+        .around-odd{
+            position: absolute;
+            left: 50%;
+            translate: -50% 0;
+            height: 235px;
+            width: 235px;
+            border-radius: 100%;
+            background-color: #FFBA94;
+        }
+        .around-even{
+            position: absolute;
+            left: 50%;
+            translate: -50% 0;
+            height: 235px;
+            width: 235px;
+            background-color: #C5FFA8;
+            border-radius: 100%;
+        }
+        img{
+            position: relative;
+            top: 60px;
+            margin-inline: auto;
+        }
+        .content-product{
+            margin-top: 60px;
+            h2{
+                font-size: 1.5em;
+                font-weight: 800;
+            }
+            .br{
+                width: 60px;
+                height: 2px;
+                background-color: #ccc;
+                margin-inline: auto;
+                margin-block: 10px;
+            }
+            h3{
+                font-weight: 300;
+                margin-bottom: 10px;
+            }
+            p{
+                font-weight: 400;
+                span{
+                    font-size: 1.3em;
+                    font-weight: 600;
+                }
+                margin-bottom: 10px;
+            }
+            button{
+                background-color: #46B20F;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px ;
+            }
+        }
+    }
+}
+
+
+
+@include screenTablet{
+
+}

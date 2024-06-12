@@ -1,0 +1,16 @@
+@use "./partials/reset";
+@use "./partials/base";
+@use "./partials/fonts";
+
+
+@use "./pages/header";
+@use "./pages/home";
+@use "./pages/about";
+@use "./pages/products";
+
+*{
+    font-family: Inter;
+}
+
+
+

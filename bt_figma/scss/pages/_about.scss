@@ -1,0 +1,71 @@
+#about{
+    padding-inline: 80px;
+    margin-top: 40px;
+    .text-about{
+        text-align: center;
+        h2{
+            margin-inline: auto;
+            font-size: 2em;
+            font-weight: 800;
+            width: 40%px;
+        }
+        p{
+            margin-top: 20px;
+            margin-inline: auto;
+            width: 50%;
+        }
+    }
+    .content-about{
+        position: relative;
+        .around1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 235px;
+            height: 235px;
+            border-radius: 50%;
+            background-color:  #DCFFCA;
+        }
+        .around2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 235px;
+            height: 235px;
+            border-radius: 50%;
+            background-color: #FFD5BD;
+        }
+        .medal{
+            display: flex;
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .medal1{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                height: 300px;
+                background-color: #fff;
+                margin-right: 16px;
+                border-radius: 5px;
+                padding: 20px;
+                width: 20%;
+                img{
+                    margin-bottom: 20px;
+                }
+                span{
+                    font-weight: 800;
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+
+                }
+                div{
+                    font-weight: 600;
+                }
+            }
+            .maedal2{
+                height: 400px;
+                padding-block: 70px;
+            }
+        }
+    }
+}

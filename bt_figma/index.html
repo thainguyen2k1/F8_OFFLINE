@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="flex flex-row items-center">
+      <div class="logo">
+        <img src="./images/header.svg" alt="" />
+      </div>
+      <input type="checkbox" id="nav-head" hidden />
+      <nav class="">
+        <ul>
+          <input type="radio" id="nav-home" name="nav" hidden />
+          <li>
+            <a href="#home"><label for="nav-home">Home</label></a>
+          </li>
+          <input type="radio" id="nav-about" name="nav" hidden />
+          <li>
+            <a href="#about"> <label for="nav-about">About</label></a>
+          </li>
+          <input type="radio" id="nav-products" name="nav" hidden />
+          <li>
+            <a href="#products"><label for="nav-products">Products</label></a>
+          </li>
+          <input type="radio" id="nav-news" name="nav" hidden />
+          <li>
+            <a href="#"><label for="nav-news">News</label></a>
+          </li>
+          <input type="radio" id="nav-contact" name="nav" hidden />
+          <li>
+            <a href="#"><label for="nav-contact">Contact</label></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="purchase">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <label for="nav-head">
+        <span class="button-bar">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </label>
+    </header>
+    <section class="grid grid-cols-1 md:grid-cols-2" id="home">
+      <div class="text-home">
+        <h2>GreenChop: Tiện gấp dễ gắp</h2>
+        <h3>AN TOÀN HƠN GIỮA MÙA COVID</h3>
+        <p>
+          GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường hiện tại.
+          Sản phẩm cho phép người dùng tháo lắp và thay mới đầu đũa 100% trong
+          mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn ngừa khả năng lây lan dịch
+          bệnh và đảm bảo an toàn cho người dùng.
+        </p>
+      </div>
+      <div class="img-home">
+        <img src="./images/img chop.png" alt="" />
+        <div class="col-text">
+          GREEN <br />
+          CHOP
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="text-about">
+        <h2>GreenChop: Giữ an toàn trong từng bữa ăn của người Việt</h2>
+        <p>
+          Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
+          tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu trong
+          mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
+        </p>
+      </div>
+      <div class="content-about">
+        <div class="around1"></div>
+        <div class="around2"></div>
+        <div class="medal">
+          <div class="medal1">
+            <img src="./images/Group 7.png" alt="" />
+            <span>1000+</span>
+            <div>Hộ gia đình tin dùng GreenChop</div>
+          </div>
+          <div class="medal1 maedal2">
+            <img src="./images/Group 7.png" alt="" />
+            <span>600+</span>
+            <div>Nhà hàng đã phục vụ GreenChop cho thực khách</div>
+          </div>
+          <div class="medal1">
+            <img src="./images/Group 7.png" alt="" />
+            <span>20+</span>
+            <div>Tỉnh thành được GreenChop phủ sóng</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="heading-products">Sản phẩm</div>
+      <div class="section-product grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="product">
+          <div>
+            <div class="around-odd"></div>
+            <img src="./images/1.png" alt="" />
+          </div>
+          <div class="content-product">
+            <h2>Combo Quán ăn</h2>
+            <div class="br"></div>
+            <h3>1 Thùng 1000 đôi</h3>
+            <p>Giá: <span>600.000</span> vnd</p>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <!-- end product -->
+        <div class="product">
+          <div>
+            <div class="around-even"></div>
+            <img src="./images/2.png" alt="" />
+          </div>
+          <div class="content-product">
+            <h2>Combo Quán ăn</h2>
+            <div class="br"></div>
+            <h3>1 Thùng 1000 đôi</h3>
+            <p>Giá: <span>600.000</span> vnd</p>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <!-- end product -->
+        <div class="product">
+          <div>
+            <div class="around-odd"></div>
+            <img src="./images/3.png" alt="" />
+          </div>
+          <div class="content-product">
+            <h2>Combo Quán ăn</h2>
+            <div class="br"></div>
+            <h3>1 Thùng 1000 đôi</h3>
+            <p>Giá: <span>600.000</span> vnd</p>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <!-- end product -->
+        <div class="product">
+          <div>
+            <div class="around-even"></div>
+            <img src="./images/1.png" alt="" />
+          </div>
+          <div class="content-product">
+            <h2>Combo Quán ăn</h2>
+            <div class="br"></div>
+            <h3>1 Thùng 1000 đôi</h3>
+            <p>Giá: <span>600.000</span> vnd</p>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <!-- end product -->
+        <div class="product">
+          <div>
+            <div class="around-odd"></div>
+            <img src="./images/2.png" alt="" />
+          </div>
+          <div class="content-product">
+            <h2>Combo Quán ăn</h2>
+            <div class="br"></div>
+            <h3>1 Thùng 1000 đôi</h3>
+            <p>Giá: <span>600.000</span> vnd</p>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <!-- end product -->
+        <div class="product">
+          <div>
+            <div class="around-odd"></div>
+            <img src="./images/3.png" alt="" />
+          </div>
+          <div class="content-product">
+            <h2>Combo Quán ăn</h2>
+            <div class="br"></div>
+            <h3>1 Thùng 1000 đôi</h3>
+            <p>Giá: <span>600.000</span> vnd</p>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <!-- end product -->
+      </div>
+    </section>
+  </body>
+</html>
