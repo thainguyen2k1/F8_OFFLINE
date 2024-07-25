@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="btn-sign px-4 py-4">Đăng nhập</button>
+    <div class="form-up hidden">
+      <div class="cover"></div>
+      <!-- sign in -->
+      <div class="content sign-in bg-white">
+        <div class="grid grid-cols-2">
+          <button class="py-3 bg-white">Đăng Nhập</button>
+          <button class="btn-sign-up py-3 bg-red-300">Đăng Ký</button>
+        </div>
+        <p class="text-center my-4">Với các tài khoản mạng xã hội</p>
+        <div class="grid grid-cols-2 mx-4 justify-center gap-4">
+          <div class="google text-center py-2">
+            <i class="fa-brands fa-google"></i>
+            Google
+          </div>
+          <div class="facebook text-center py-2">
+            <i class="fa-brands fa-facebook"></i>
+            Facebook
+          </div>
+        </div>
+        <div class="py-6 mx-4 relative s-hr">
+          <p class="absolute bg-white px-4">hoặc</p>
+          <hr />
+        </div>
+        <form class="mx-8">
+          <p class="existed hidden text-red-600 py-3">Account not existed.</p>
+          <div>
+            <div class="font-medium">Email</div>
+            <input class="px-4 py-2" type="text" placeholder="Email" />
+            <p class="error hidden italic text-red-600">
+              *Vui lòng nhập thông tin
+            </p>
+            <div class="font-medium mt-4">Mật khẩu</div>
+            <input class="px-4 py-2" type="password" placeholder="Mật khẩu" />
+            <p class="error hidden italic text-red-600">
+              *Vui lòng nhập thông tin
+            </p>
+          </div>
+          <a href="#" class="text-right italic block py-3">Quên mật khẩu?</a>
+          <div
+            class="btn-existed bg-black text-white w-full py-3 mb-6 text-center"
+          >
+            Đăng nhập
+          </div>
+        </form>
+      </div>
+      <!-- end sign in -->
+      <!-- sign up -->
+      <div class="content sign-up bg-white hidden">
+        <div class="grid grid-cols-2">
+          <button class="btn-sign-in py-3 bg-red-300">Đăng Nhập</button>
+          <button class="py-3 bg-white">Đăng Ký</button>
+        </div>
+        <p class="text-center my-4">
+          Hoàn thành đăng kí và bắt đầu trải nghiệm ngay!
+        </p>
+        <form action="1" class="mx-8">
+          <div>
+            <div class="font-medium">Họ và tên</div>
+            <input class="px-4 py-2" type="text" placeholder="Email" />
+            <p class="error hidden italic text-red-600">
+              *Vui lòng nhập thông tin
+            </p>
+            <div class="font-medium mt-2">Email</div>
+            <input class="px-4 py-2" type="text" placeholder="Email" />
+            <p class="error hidden italic text-red-600">
+              *Vui lòng nhập thông tin
+            </p>
+            <div class="font-medium mt-2">Mật khẩu</div>
+            <input class="px-4 py-2" type="password" placeholder="Mật khẩu" />
+            <p class="error hidden italic text-red-600">
+              *Vui lòng nhập thông tin
+            </p>
+          </div>
+          <p class="py-3">
+            Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+            <a href="#" class="text-red-400"
+              >điều kiện về qui định và chính sách của dân trí</a
+            >
+          </p>
+          <button class="bg-black text-white w-full py-3 mb-6">Đăng ký</button>
+        </form>
+      </div>
+      <!-- end sign up -->
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
