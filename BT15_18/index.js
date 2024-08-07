@@ -74,7 +74,9 @@ function gender() {
 }
 function removeProduct(i) {
   arrTodo.splice(i, 1);
-  gender();
+  if (arrTodo.length === 0) {
+    deleteGioHang();
+  } else gender();
 }
 function update() {
   var input = document.querySelector(".gioHang").querySelectorAll("input");
