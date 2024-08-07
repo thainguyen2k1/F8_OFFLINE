@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+      }
+      .bold-center {
+        font-weight: 700;
+        text-align: center;
+      }
+      .w200 {
+        width: 200px;
+      }
+      .gioHang {
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <table class="danhSach">
+      <tr>
+        <td class="bold-center">STT</td>
+        <td class="bold-center">Tên sản phẩm</td>
+        <td class="bold-center">Giá</td>
+        <td class="bold-center">Thêm vào giỏ hàng</td>
+      </tr>
+      <tr>
+        <td class="w200">1</td>
+        <td class="product">Sản phẩm 1</td>
+        <td class="price">1000</td>
+        <td class="w200">
+          <input type="text" value="1" />
+          <br />
+          <button onclick="addProduct(0)">Thêm vào giỏ hàng</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class="product">Sản phẩm 2</td>
+        <td class="price">2000</td>
+        <td>
+          <input type="text" value="1" />
+          <br />
+          <button onclick="addProduct(1)">Thêm vào giỏ hàng</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class="product">Sản phẩm 3</td>
+        <td class="price">3000</td>
+        <td>
+          <input type="text" value="1" />
+          <br />
+          <button onclick="addProduct(2)">Thêm vào giỏ hàng</button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="product">Sản phẩm 4</td>
+        <td class="price">4000</td>
+        <td>
+          <input type="text" value="1" />
+          <br />
+          <button onclick="addProduct(3)">Thêm vào giỏ hàng</button>
+        </td>
+      </tr>
+    </table>
+    <div class="gioHang"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

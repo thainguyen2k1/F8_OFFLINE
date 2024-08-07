@@ -9,7 +9,8 @@ var inputEl = document.querySelectorAll("input");
 var errorEl = document.querySelectorAll(".error");
 var btnExistEl = document.querySelector(".btn-existed");
 var existedEl = document.querySelector(".existed");
-
+var eyeEL = document.querySelector(".eye");
+var seyeEl = document.querySelector(".s-eye");
 btnSignEl.addEventListener("click", function() {
   formUpEl.classList.remove("hidden");
 });
@@ -53,4 +54,15 @@ btnExistEl.addEventListener("click", function() {
     }
   }
   existedEl.classList.remove("hidden");
+});
+seyeEl.addEventListener("click", function() {
+  seyeEl.classList.add("hidden");
+  eyeEL.classList.remove("hidden");
+  inputEl[1].type = "text";
+});
+eyeEL.addEventListener("click", function() {
+  console.log(1);
+  eyeEL.classList.add("hidden");
+  seyeEl.classList.remove("hidden");
+  inputEl[1].type = "password";
 });
