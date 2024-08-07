@@ -15,7 +15,7 @@ function addProduct(index) {
   } else {
     for (var i = 0; i < arrTodo.length; i++) {
       if (arrTodo[i].product === todo.product) {
-        arrTodo[i].number += todo.number;
+        arrTodo[i].number = arrTodo[i].number * 1 + todo.number * 1;
         break;
       }
       if (i === arrTodo.length - 1) {
@@ -79,7 +79,8 @@ function removeProduct(i) {
 function update() {
   var input = document.querySelector(".gioHang").querySelectorAll("input");
   for (var i = 0; i < arrTodo.length; i++) {
-    arrTodo[i].number = input[i].value;
+    var a = 1 * input[i].value;
+    arrTodo[i].number = a;
   }
   gender();
 }
