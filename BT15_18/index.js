@@ -84,11 +84,16 @@ function update() {
     var a = 1 * input[i].value;
     arrTodo[i].number = a;
   }
+  if (confirm("Are you sure?")) {
+    alert("Cập nhật giỏ hàng thành công");
+  }
   gender();
 }
 function deleteGioHang() {
-  arrTodo = [];
-
+  if (confirm("Are you sure?")) {
+    arrTodo = [];
+    alert("Xoá giỏ hàng thành công");
+  }
   document.querySelector(
     ".gioHang"
   ).innerText = `Giỏ hàng đã được xoá thành công`;
