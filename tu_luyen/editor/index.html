@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.7.76/pdf.min.mjs"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Doc Editor</h1>
+      <div class="br"></div>
+      <div class="content">
+        <div class="menu">
+          <div class="nav hidden">
+            <ul>
+              <li class="new">New</li>
+              <li class="txt">Save as TXT</li>
+              <li class="pdf">Save as PDF</li>
+            </ul>
+          </div>
+          <div class="left-menu">
+            <button class="file">
+              File
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <input type="text" />
+          </div>
+          <div class="right-menu">
+            <button class="boldBtn">b</button>
+            <button class="underlightBtn">u</button>
+            <button class="italicBtn">i</button>
+            <input type="color" class="choose-color" />
+          </div>
+        </div>
+        <div class="data">
+          <div class="text" contenteditable="true"></div>
+        </div>
+        <div class="number">
+          <div>Số ký tự : <span class="character">0</span></div>
+          <div>Số từ : <span class="word">0</span></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
