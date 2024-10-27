@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
 
       btn.style.background = "transparent";
       btn.addEventListener("click", function() {
-        window.open("https://www.facebook.com/");
+        window.location.href = "https://www.facebook.com/";
       });
     }
   }, 1000);
