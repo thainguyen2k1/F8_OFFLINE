@@ -19,7 +19,7 @@ document.addEventListener("visibilitychange", function() {
   if (document.visibilityState === "hidden") {
     var a = number.innerText;
     setInterval(() => {
-      if (document.visibilityState === "hidden" && number.innerText <= a) {
+      if (document.visibilityState === "hidden" && number.innerText < a) {
         number.innerText++;
       }
     }, 1000);
